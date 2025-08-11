@@ -1,5 +1,9 @@
 package mobiles
 
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+
+
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -20,6 +24,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
+
 public class MobileKeyword {
 	@Keyword
 	public static void preTest(String username, String password) {
@@ -33,6 +38,7 @@ public class MobileKeyword {
 
 		Mobile.tap(findTestObject('Mobiles/Login Screens/TextView - Login'), 0)
 	}
+
 
 	@Keyword
 	public static void closeTest() {
